@@ -1,32 +1,27 @@
 package Relaciones;
 
-public class Piloto extends Persona{
-    private String compania;
-    private int id;
+public class Piloto extends Persona implements Volador {
+    private int experiencia;
 
-    public Piloto (){
-
+    public Piloto() {
     }
 
-    public Piloto(int edad, String nombre, String apellido, String compania, int id) {
-        super(edad, nombre, apellido);
-        this.compania = compania;
-        this.id = id;
+    public Piloto(String nombre, String apellido, int edad, int experiencia) {
+        super(nombre, apellido, edad);
+        this.experiencia = experiencia;
     }
 
-    public String getCompania() {
-        return compania;
+    public int getExperiencia() {
+        return experiencia;
     }
 
-    public void setCompania(String compania) {
-        this.compania = compania;
+    public void setExperiencia(int experiencia) {
+        this.experiencia = experiencia;
     }
 
-    public int getId() {
-        return id;
-    }
+    @Override
+    public void volar() {
+        System.out.println("Yo hago volar el avion y vuelo en el");
 
-    public void setId(int id) {
-        this.id = id;
     }
 }

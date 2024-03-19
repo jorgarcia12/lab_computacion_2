@@ -1,40 +1,39 @@
 package Relaciones;
 
-public class Avion {
-    private int capacidad;
-    private String modelo;
-    private Vuelo v1;
+public class Avion implements Volador {
+    private String aerolinea;
+
+    private Vuelo vuelo;
+
+    private Flota flota;
 
     public Avion() {
-
     }
 
-    public Avion(int capacidad, String modelo, Vuelo v1) {
-        this.capacidad = capacidad;
-        this.modelo = modelo;
+    public Avion(String aerolinea, int cantidad) {
+        this.aerolinea = aerolinea;
+        this.flota = new Flota(cantidad);
     }
 
-
-
-    public int getCapacidad() {
-        return capacidad;
+    public String getAerolinea() {
+        return aerolinea;
     }
 
-    public void setCapacidad(int capacidad) {
-        this.capacidad = capacidad;
+    public void setAerolinea(String aerolinea) {
+        this.aerolinea = aerolinea;
     }
 
-    public String getModelo() {
-        return modelo;
+    public Vuelo getVuelo() {
+        return vuelo;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setVuelo(Vuelo vuelo) {
+        this.vuelo = vuelo;
     }
-    public void despegar(){
-        System.out.println("Despegando....");
-    }
-    public void aterrizar(){
-        System.out.println("Aterrizando el avion");
+
+    @Override
+    public void volar() {
+        System.out.println("Yo soy un avion y estoy hecho para volar");
+
     }
 }

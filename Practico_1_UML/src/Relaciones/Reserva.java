@@ -1,30 +1,26 @@
 package Relaciones;
 
 public class Reserva {
-    private int num_reserva;
-    private int cant_asientos;
+    private int numReserva;
 
-    public Reserva (){
+    private Vuelo v;
+
+    public Reserva() {
     }
 
-    public Reserva(int num_reserva, int cant_asientos) {
-        this.num_reserva = num_reserva;
-        this.cant_asientos = cant_asientos;
+    public Reserva(int numReserva) {
+        this.numReserva = numReserva;
     }
 
-    public int getNum_reserva() {
-        return num_reserva;
+    public int getNumReserva() {
+        return numReserva;
     }
 
-    public void setNum_reserva(int num_reserva) {
-        this.num_reserva = num_reserva;
+    public void setNumReserva(int numReserva) {
+        this.numReserva = numReserva;
     }
 
-    public int getCant_asientos() {
-        return cant_asientos;
-    }
-
-    public void setCant_asientos(int cant_asientos) {
-        this.cant_asientos = cant_asientos;
+    public void agregarVuelo(Vuelo v){
+        this.v = v;
     }
 }
