@@ -1,3 +1,5 @@
+package ej2;
+
 import java.util.NoSuchElementException;
 
 public class PilaArray<E> {

@@ -1,3 +1,5 @@
+package ej1;
+
 public interface Operable<E> {
     E suma(E a, E b);
 
