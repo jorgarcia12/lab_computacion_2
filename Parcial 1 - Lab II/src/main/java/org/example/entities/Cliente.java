@@ -140,7 +140,6 @@ public class Cliente implements Serializable {
 
     //Getter de Pedidos
 
-
     public List<Domicilio> getDomicilioCliente() {
         return domicilioCliente;
     }

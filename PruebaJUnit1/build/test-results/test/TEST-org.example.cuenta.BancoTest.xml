@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.cuenta.BancoTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-06-19T00:00:19" hostname="DESKTOP-QSHPBFT" time="0.111">
+  <properties/>
+  <testcase name="Depositar monto negativo" classname="org.example.cuenta.BancoTest" time="0.053"/>
+  <testcase name="Consultar saldo de cuenta inexistente" classname="org.example.cuenta.BancoTest" time="0.002"/>
+  <testcase name="Agregar cuenta con saldo inicial" classname="org.example.cuenta.BancoTest" time="0.006"/>
+  <testcase name="Depositar en cuenta inexistente" classname="org.example.cuenta.BancoTest" time="0.003"/>
+  <testcase name="Consultar saldo de cuenta existente" classname="org.example.cuenta.BancoTest" time="0.006"/>
+  <testcase name="Retirar saldo insuficiente" classname="org.example.cuenta.BancoTest" time="0.007"/>
+  <testcase name="Depositar en cuenta existente" classname="org.example.cuenta.BancoTest" time="0.003"/>
+  <testcase name="Retirar de cuenta inexistente" classname="org.example.cuenta.BancoTest" time="0.001"/>
+  <testcase name="Retirar de cuenta existente" classname="org.example.cuenta.BancoTest" time="0.002"/>
+  <testcase name="Retirar monto negativo" classname="org.example.cuenta.BancoTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
